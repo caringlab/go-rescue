@@ -24,16 +24,14 @@
         document.body.style.textAlign = "left";
       }
 
-      createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "https://github.com/caringlab/go-rescue/releases/download/v1.0.0/Go-Rescue.data",
+     createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "https://cors-tau-nine.vercel.app/api/cors?url=https://github.com/caringlab/go-rescue/releases/download/v1.0.0/Go-Rescue.data",
         frameworkUrl: "Build/Go-Rescue.framework.js",
         codeUrl: "Build/Go-Rescue.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "George Mason University",
         productName: "Go-Rescue",
         productVersion: "1.0",
-        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
   </body>
